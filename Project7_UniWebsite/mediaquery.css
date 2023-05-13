@@ -1,0 +1,160 @@
+
+/* Media Query */
+
+@media (max-width:1100px) {
+
+    .box1 {
+        padding: 0% 4%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1 img {
+        width: 40%;
+    }
+    
+    .box2 {
+        flex-direction: column-reverse;
+    }
+
+    .minBox h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width:800px) {
+
+    .s1 h1 {
+        font-size: 2rem;
+    }
+
+    .box1 {
+        padding: 0% 2%;
+    }
+
+    .box1 img {
+        width: 50%;
+    }
+
+    .minBox h1 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width:600px) {
+
+    * {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        display: block;
+    }
+    .imageContainer {
+        padding:2%;
+    }
+    .navbar li {
+        font-size: 1.15rem;
+        padding: 0;
+    }
+
+    .navbar img {
+        text-align: left;
+        width: 20%;
+    }
+
+    #hamburger {
+        visibility: visible;
+        cursor: pointer;
+    }
+
+    .menu {
+        font-size: 0.8rem;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background: linear-gradient(rgb(110, 231, 191), rgb(166, 77, 207));
+    }
+
+    .menu.display {
+        display: none;
+    }
+
+    #aboutUs,
+    .s1 h1,
+    .s3 form h1 {
+        font-size: 1.8rem;
+    }
+
+    textarea {
+        height: 10em;
+    }
+
+    .box1 {
+        padding: 0% 1%;
+    }
+
+    .box1 img {
+        width: 70%;
+    }
+
+    .minBox h1 {
+        font-size: 1.5rem;
+    }
+
+    input,
+    textarea,
+    .btnBox {
+        width: 80%;
+    }
+
+    .btnBox button {
+        width: 18%;
+    }
+
+    footer {
+        padding: 3%;
+    }
+}
+
+@media (max-width:425px) {
+
+    p {
+        font-size: 1rem;
+    }
+
+    .navbar img {
+        text-align: left;
+        width: 25%;
+    }
+
+    .s1 p {
+        font-size: .85rem;
+    }
+
+    .minBox h1 {
+        font-size: 1.25rem;
+    }
+
+    #aboutUs,
+    .s3 form h1 {
+        font-size: 1.5rem;
+    }
+
+    textarea {
+        height: 8em;
+    }
+
+    .box1 img {
+        width: 90%;
+    }
+
+    .btnBox button {
+        width: 27%;
+    }
+
+    footer {
+        padding: 2%;
+    }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Snake Game Trial</title>
+	<style>
+		/* {
+             margin:0;
+        } */
+
+		/* body{
+            border:2px solid red;
+        }
+		.box {
+			background: red;
+			border: 1px solid black;
+			margin: 10px;
+		}
+
+		.parent {
+			background: white;
+			border: 1px solid black;
+		}
+
+		.fifty-percent {
+			width: 50%;
+		}
+
+		.fifty-vw {
+			width: 50vw;
+		}
+
+		.twenty-five-vh {
+			height: 25vh;
+		}
+
+		.parent {
+			width: 100px;
+			;
+		} */
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		.container {
+			width: 60%;
+			height: 85vh;
+			margin: 0;
+			border: 2px solid blue;
+			position: relative;
+			background-color: aquamarine;
+		}
+
+		#snakeBox {
+			width: 4%;
+			height: 4vh;
+			border: 1px solid red;
+			background: linear-gradient(red, orange);
+			position: absolute;
+			top: 80%;
+			left: 70%;
+			animation-duration: 2s;
+			animation-timing-function: linear;
+			animation-fill-mode: forwards;
+		}
+
+		.UpMove {
+			animation-name: snakeMoveU;
+		}
+
+		.DownMove {
+			animation-name: snakeMoveD;
+		}
+
+		.RightMove {
+			animation-name: snakeMoveRL;
+		}
+
+		.LeftMove {
+			animation-name: snakeMoveLR;
+		}
+
+		@keyframes snakeMoveD {
+
+			from {}
+
+			to {
+				top: 95.5%;
+
+			}
+		}
+
+		@keyframes snakeMoveU {
+
+			from {}
+
+			to {
+				top: 0%;
+
+			}
+		}
+
+		@keyframes snakeMoveRL {
+			from {}
+
+			to {
+				left: 96%;
+			}
+		}
+
+		@keyframes snakeMoveLR {
+			from {}
+
+			to {
+				left: 0%;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<div id="snakeBox"></div>
+	</div>
+
+	<script>
+		const snake = document.getElementById("snakeBox");
+		let stopId = 0;
+		let done=false;
+		window.addEventListener('load', function () {
+			stopId = window.requestAnimationFrame(stepD);
+			// snake.classList.add("UpMove");
+		});
+
+
+		window.addEventListener('keydown',leftOrRight);
+        window.addEventListener('animationcancel',function(){
+			console.log("Animation has been cancelled");
+		})
+		function leftOrRight(e) {
+			
+			// if (e.keyCode == 37) {
+			// 	window.cancelAnimationFrame(stopId);
+			// 	stopId=window.requestAnimationFrame(stepR);
+			// 	window.removeEventListener('keydown', leftOrRight);
+			// 	// window.addEventListener('keydown', topOrBottom);
+			// }
+			// else if (e.keyCode == 39) {
+			// 	directionChange();
+			// 	snake.classList.add("RightMove");
+			// 	window.removeEventListener('keydown', leftOrRight);
+			// 	// window.addEventListener('keydown', topOrBottom);
+			// }
+			// else if (e.keyCode == 38 || e.keyCode == 40) {}
+			// else {
+			// 	// snake.style.animationPlayState="paused";
+			// 	alert("Invalid input! Press only arrow keys");
+			// }
+		};
+
+		// function topOrBottom(e) {
+		// 	if (e.keyCode == 38) {
+		// 		directionChange();
+		// 		snake.classList.add("UpMove");
+		// 		window.removeEventListener('keydown',topOrBottom);
+		// 		window.addEventListener('keydown', leftOrRight);
+		// 	}
+		// 	else if (e.keyCode == 40) {
+		// 		directionChange();
+		// 		snake.classList.add("DownMove");
+		// 		window.removeEventListener('keydown',topOrBottom);
+		// 		window.addEventListener('keydown', leftOrRight);
+		// 	}
+		// 	else if (e.keyCode == 37 || e.keyCode == 39) { }
+		// 	else {
+		// 		alert("Invalid input! Press only arrow keys");
+		// 	}
+		// }
+
+		// function directionChange() {
+		// 	let variable = snake.getBoundingClientRect();
+		// 	console.log(variable.x, variable.y);
+		// 	snake.style.top = variable.y + "px";
+		// 	snake.style.left = variable.x + "px";
+		// 	snake.removeAttribute("class");
+		// }
+		let start = 0;
+		let progress;
+		function stepD(elapsed) {
+			progress = elapsed - start;
+			// console.log(done);
+			// console.log(e);
+			const count = Math.min(.1 * progress, 610);
+			snake.style.top = count + "px";
+			// if( e.keycode==37 || e.keycode==39){
+			// 	done=true;
+			// }
+			window.requestAnimationFrame(stepD);
+			if (progress < 7100) {
+				return;
+			}
+			console.log("Hello");
+		// 	else {
+		// 		// cancelAnimationFrame(stopId);
+		// 		// start = elapsed;
+		// 	}
+		}
+
+		function stepR(elapse) {
+			// console.log("Hi");
+			progress = elapse - start;
+			// console.log(progress);
+			const count = Math.min(.1 * progress, 800);
+			snake.style.left = count + "px";
+			// console.log(count);
+			if (progress< 8000)
+				window.requestAnimationFrame(stepR);
+			else {
+				cancelAnimationFrame(stopId);
+				start = elapse;
+			}
+		}
+	</script>
+</body>
+
+</html>

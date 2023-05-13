@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navbar {
+    font-size: 1.5rem;
+    color: white;
+    height: 10vh;
+    background-color: rgb(1, 1, 53);
+    display: flex;
+    align-items: center;
+    overflow-wrap: break-word;
+    padding: 1.5%;
+    /* Word wrap also works in a similar fashion */
+    /* word-wrap: break-word; */
+}
+
+#section {
+    display: flex;
+}
+
+.leftC {
+    width: 50%;
+    padding: 2% 2%;
+    display: flex;
+    justify-content: flex-end;
+    height: 70vh;
+}
+
+.leftC #gridContainer {
+    display: grid;
+    width: 70%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-sizing: border-box;
+}
+
+.gridItem {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+/* .gridItem h2{
+    border:2px solid blue;
+    padding:5% 35%;
+} */
+.gridItem:hover {
+    background-color: rgb(241, 215, 241);
+    cursor: pointer;
+}
+
+.noBorderL {
+    border-left: none;
+}
+
+.noBorderR {
+    border-right: none;
+}
+
+.noBorderT {
+    border-top: none;
+}
+
+.noBorderB {
+    border-bottom: none;
+}
+
+.rightC {
+    width: 50%;
+    padding: 2% 2%;
+    height: 70vh;
+}
+
+.miniC {
+    display: flex;
+    align-items: center;
+    margin: 2% 1%;
+}
+
+#btn {
+    width: 75px;
+    padding: 1% 4%;
+    background-color: rgb(241, 215, 241);
+    margin: 0% 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#btn:active {
+    transform: scale(0.95);
+}
+
+img {
+    opacity:0;
+    width: 25%;
+    transition:all 0.5s ease-in;
+}
+
+img.show {
+   opacity:1;
+}
+
+@media only screen and (max-width:650px) {
+    #section {
+        display: block;
+    }
+
+    .leftC {
+        width: 100%;
+        height: 50vh;
+        justify-content: center;
+    }
+
+    .rightC {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 25vh;
+    }
+
+    .miniC {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+
+@media only screen and (min-width:650px) and (max-width:1150px) {
+    .leftC #gridContainer {
+        width: 100%;
+    }
+}

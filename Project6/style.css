@@ -1,0 +1,273 @@
+/* CSS reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styling Navbar */
+nav {
+    color: white;
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+.leftCont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 2%;
+}
+
+.leftCont h1 {
+    font-size: 2rem;
+    color: #fbff00;
+}
+
+#hamburger {
+    font-size: 2rem;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#listItems {
+    width: 65%;
+    padding: 0% 2%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#listItems li {
+    list-style: none;
+    text-align: center;
+    margin: 0% 2%;
+    padding: 1% 0%;
+}
+
+#listItems li a {
+    color: white;
+    text-decoration: none;
+    padding: 4%;
+    transition: 0.5s ease-in-out;
+}
+
+#listItems li a:hover {
+    font-weight: bold;
+    color: #ff7300;
+    background-color: #fbff00;
+    /*Border radius is an important property.Play with it. Note that when specified in %, the radius is elliptical but when given in px or em, the radius is round */
+    border-radius: 100% 50%;
+}
+
+/* Common traits between sections */
+nav,
+#section1,
+footer {
+    background-color: #074241;
+}
+
+/* Styling section1 */
+
+#section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1leftBox {
+    color: white;
+    width: 60%;
+    padding: 2% 5%;
+}
+
+.s1leftBox h1 {
+    text-transform: uppercase;
+    margin: 4% 0%;
+    font-weight: 200;
+}
+
+.s1leftBox p {
+    line-height: 150%;
+}
+
+.s1leftBox button {
+    background-color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    padding: 2% 6%;
+    border-radius: 0.5vw;
+    margin: 4% 0%;
+    cursor: pointer;
+}
+
+.s1leftBox button:active {
+    transform: scale(0.93);
+}
+
+.s1rightBox {
+    width: 40%;
+    text-align: center;
+}
+
+.s1rightBox img {
+    width: 90%;
+}
+
+/* Styling section2 */
+
+#section2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.miniContainer h1 {
+    margin: 2% 0%;
+}
+
+.dimensions img {
+    width: 90%;
+}
+
+.s2midBox img {
+    width: 65%;
+}
+
+/* Styling section3 */
+
+#section3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.s3leftBox {
+    width: 50%;
+    padding: 0% 2%;
+    font-size: 1.1rem;
+}
+
+.s3leftBox li {
+    padding: 4%;
+}
+
+.s3rightBox {
+    width: 50%;
+    text-align: center;
+}
+
+.s3rightBox img {
+    width: 100%;
+}
+
+/* Styling section4 */
+
+#section4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.s4leftBox {
+    width: 45%;
+    padding: 0% 5%;
+}
+
+.s4leftBox img {
+    width: 100%;
+}
+
+.s4rightBox {
+    width: 50%;
+    padding: 0% 2%;
+}
+
+.s4rightBox li {
+    padding: 4%;
+
+}
+
+/* Styling footer  */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+footer h1 {
+    margin: 10% 2%;
+}
+
+.footerLeftBox {
+    text-align: justify;
+}
+
+.footerMidBox p {
+    font-size: 1.25rem;
+    margin: 10% 1%;
+}
+
+#miniDiv {
+    text-align: left;
+}
+
+#miniDiv input {
+    width: 75%;
+    border-radius: 0.3vw;
+    padding: 2% 4%;
+}
+
+#miniDiv input:focus {
+    outline: none;
+    border-color: #86b7fe;
+}
+
+#miniDiv p {
+    color: #6c757d;
+    font-weight: 100;
+}
+
+#miniDiv button {
+    color: white;
+    font-size: 1.1rem;
+    width: 25%;
+    background-color: #0d6efd;
+    border: 1px solid #0d6efd;
+    border-radius: .3vw;
+    margin: 4% 0%;
+    cursor: pointer;
+}
+
+/* Utility classes  */
+
+.transition {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    padding: 2.5% 0%;
+}
+
+.dimensions {
+    width: 30%;
+    padding: 1%;
+    text-align: center;
+    line-height: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+

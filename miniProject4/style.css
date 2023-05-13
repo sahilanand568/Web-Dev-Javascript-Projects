@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    color: white;
+    height: 100vh;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.container::before{
+    content:"";
+    background: url("https://www.thewowstyle.com/wp-content/uploads/2015/04/autumn-free-wallpaper-autumn-colors_2560x1600_93076.jpg");
+    background-size: 100% 100%;
+    height:100vh;
+    width:100%;
+    z-index: -1;
+    position:absolute;
+    top:0;
+    left:0;
+    animation-name: Sahil1;
+    animation-duration: 15s;
+    animation-iteration-count: 1;
+}
+@keyframes Sahil1{
+    from{
+        filter: blur(6px);
+    }
+    to{
+        filter: blur(0px);
+
+    }
+}
+
+span {
+    width: 35px;
+    height: 40px;
+    padding:0px 20px;
+    /* background-color: grey; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: Sahil2;
+    animation-duration: 25s;
+    animation-iteration-count: 1;
+}
+@keyframes Sahil2{
+    from{
+        opacity: 1;
+        /* margin:0; */
+    }
+    to{
+        opacity:0;
+        /* margin:0px -1px; */
+    }
+}

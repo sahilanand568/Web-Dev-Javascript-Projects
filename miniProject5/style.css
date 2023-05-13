@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ #container {
+    width: 100%;
+    /* height: 1500px; */
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1% 0%;
+}
+
+.miniBox{
+    width:25%;
+    height:25vh;
+    font-size: 2rem;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: steelblue;
+    margin:10px;
+    border-radius: 10px;
+    transform: translateX(400%);
+    transition: transform 0.5s ease-in;
+}
+.miniBox:nth-of-type(even){
+    transform: translateX(-400%);
+    }
+
+.miniBox.show{
+    transform: translateX(0);
+}

@@ -1,0 +1,189 @@
+/* CSS reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Styling the navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0));
+}
+
+.imageContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+.imageContainer img {
+    width: 40%;
+}
+
+#hamburger {
+    color: white;
+    font-size: 2rem;
+    visibility: hidden;
+}
+
+.menu {
+    display: flex;
+    width: 75%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar li {
+    list-style: none;
+    text-align: center;
+    padding: 1%;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5vmax 1vmax;
+}
+
+.navbar li a:hover {
+    background-color: #2e9e00;
+    border-radius: 0.5vw;
+}
+
+/* Styling the 1st section  */
+
+.s1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./eduford_img/banner.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 8% 8%;
+}
+
+.s1 h1 {
+    font-size: 2.5rem;
+    margin-top: 10%;
+}
+
+.s1 p {
+    margin: 5% 0%;
+}
+
+.s1 button {
+    background: transparent;
+    margin: 2% 0%;
+    padding: 2%;
+    color: white;
+    border-color: white;
+    cursor: pointer;
+}
+
+.s1 button:hover {
+    background-color: rgba(196, 10, 70, 0.3);
+    border-color: rgb(241 147 153 / 70%);
+}
+
+/* Styling the h1 between section1 and section2 */
+#aboutUs {
+    text-align: center;
+    padding-top: 1%;
+    font-size: 2rem;
+}
+
+/* Styling section2 */
+
+.box1 {
+    width: 90%;
+    margin: auto;
+    padding: 2% 4%;
+    display: flex;
+}
+
+.box1 img {
+    width: 27%;
+    border: 1px solid black;
+    border-radius: 1.5vw;
+    margin-bottom: 1%;
+}
+
+.minBox {
+    text-align: justify;
+    margin: 2%;
+}
+
+.minBox h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1%;
+}
+
+/* Styling the third section  */
+
+.s3 {
+    background-color: #ebebeb;
+}
+
+.s3 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5%;
+}
+
+.s3 form h1 {
+    font-size: 2rem;
+}
+
+input,
+textarea {
+    width: 65%;
+    padding: 0.5%;
+    border-radius: 0.5vw;
+    margin: 1%;
+    resize: none;
+}
+
+.btnBox {
+    width: 65%;
+}
+
+.btnBox button {
+    width: 15%;
+    padding: 1%;
+    border-radius: 0.5vw;
+    background-color: azure;
+    cursor: pointer;
+}
+
+.btnBox button:active {
+    transform: scale(.93);
+}
+
+.btnBox button:hover {
+    background-color: beige;
+}
+
+/* Styling the footer  */
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}

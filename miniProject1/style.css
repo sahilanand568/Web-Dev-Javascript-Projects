@@ -1,0 +1,65 @@
+/* CSS Reset  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+ overflow: hidden; 
+}
+.container {
+    display: flex;
+    width: 100%;
+    padding:5% 5%;
+    justify-content: space-evenly;
+    /* border:3px solid blue; */
+}
+
+.active {
+    width: 8%;
+    /* border: 2px solid red; */
+    height: 80vh;
+    /* margin: 0% 2%; */
+    border-radius: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor:pointer;
+}
+
+.img1{
+    background: url("https://www.shutterstock.com/shutterstock/photos/1643400631/display_1500/stock-photo-negril-jamaica-famous-ricks-restaurant-in-negril-jamaica-cliff-jumping-attraction-day-1643400631.jpg");
+}
+.img2{
+    background: url("https://www.shutterstock.com/shutterstock/photos/87971314/display_1500/stock-photo-street-in-key-west-florida-87971314.jpg");
+}
+.img3{
+    background: url("https://www.shutterstock.com/shutterstock/photos/70337713/display_1500/stock-photo-tropical-caribbean-harbor-marina-in-morning-light-w-boats-and-pastel-houses-70337713.jpg");
+}
+.img4{
+    background: url("https://www.shutterstock.com/shutterstock/photos/1064935775/display_1500/stock-photo-outdoor-nature-selfie-of-young-lovely-couple-canoeing-kayaking-on-sunny-day-on-lake-sea-with-1064935775.jpg");
+}
+.img5{
+    background: url("https://www.hdwallpapers.in/download/australia_rock_sea_with_stones_during_sunset_hd_nature-HD.jpg");
+}
+
+.selected{
+width:65%;
+background-size: 100% 100%;
+background-repeat: no-repeat;
+transition: width 2s;
+}
+
+/* #try {
+    width:100%;
+    object-fit: cover;
+} */
+
+/* .image {
+    width: 15%;
+} */
+
+/* .image:hover{
+    
+} */

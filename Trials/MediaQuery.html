@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaQueryTrial</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-size: 2rem;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            /* border: 2px solid red; */
+            text-align: justify;
+            margin: 5px;
+            padding: 10px 5px;
+            width:40%;
+        }
+
+        img {
+            /* border: 2px solid blue; */
+            margin: 5px;
+            width:40%;
+            height: auto;
+        }
+
+        @media only screen and (min-width:100px) and (max-width:900px) {
+            .container {
+                display: block;
+            }
+
+            p,
+            img {
+                width: 100%;
+            }
+
+            p {
+                color: red;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Making this webpage responsive</h1>
+
+    <div class="container">
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum neque similique minus officia sit architecto
+            iusto, enim, esse placeat impedit aut ducimus eum inventore repudiandae saepe sint perspiciatis at. Vero
+            magnam cum aut tempore maiores inventore molestiae quaerat assumenda ab fugiat! Accusantium dolore suscipit
+            dolorum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus earum eligendi quibusdam eaque ut?
+            Ipsa, non aut! Ipsum, recusandae ipsam! Expedita vitae? </p>
+
+        <img src="https://tse4.mm.bing.net/th?id=OIP.rvSWtRd_oPRTwDoTCmkP5gHaE8&pid=Api&P=0" alt="Mountains">
+
+    </div>
+</body>
+
+</html>

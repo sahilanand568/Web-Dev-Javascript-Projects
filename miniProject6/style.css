@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* body{
+} */
+.mainContainer {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    color: white;
+    font-size: 2rem;
+    border: 5px solid green;
+}
+
+.container1 {
+    background-image: linear-gradient(rgba(0, 0, 150, 0.5), rgba(0, 0, 150, 0.5)), url("https://gmedia.playstation.com/is/image/SIEPDC/live-from-ps5-keyart-01-en-10jan23?$1200px$");
+    /* border:1px solid red; */
+    background-position: 25%;
+    transition: background-position 0s ease-in;
+}
+
+.container1:hover,
+.container2:hover {
+    width: 175%;
+    background-position: 75%;
+}
+
+.container2 {
+    background-image: linear-gradient(rgba(100, 100, 100, 0.5), rgba(100, 100, 100, 0.5)), url("https://i2-prod.dailystar.co.uk/incoming/article21087030.ece/ALTERNATES/s810/0_Xbox-Series-X-IMAGE.jpg");
+    /* border:1px solid red; */
+    background-position: 15%;
+}
+
+/* Utility classes */
+.item {
+    white-space:nowrap;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: width 0.5s ease-in;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    margin-top: 250px;
+}
+
+.btn {
+    width: 200px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid white;
+    padding: 16px 24px;
+    margin-top: 40px;
+    cursor: pointer;
+}
